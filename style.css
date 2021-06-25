@@ -1,0 +1,160 @@
+body{
+    background-color:hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-position: 550px 300px;
+    
+    background-repeat: no-repeat;   
+    margin-top: 0;
+    padding:0;
+
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.bodi{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+ 
+}
+
+.body2{
+
+    background-image: url(images/bg-pattern-top.svg);
+    background-position: -370px -380px;  
+    grid-column: 1/5;
+    background-repeat: no-repeat;
+
+}
+
+.grid {
+    margin-top: 260px;
+    grid-column: 3/5;
+    height: 550px;
+    margin-left: 480px;
+
+}
+
+.centrar{
+    background: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.por{
+    background: url(images/bg-pattern-card.svg);
+    height: 110px;
+    position : relative;
+}
+
+.datos{
+    height: 95px;
+    width: 93px;
+    left: 50%;
+    position : absolute;
+    top : 50%; left : 34%;
+    background: url(images/image-victor.jpg);
+    border-radius:150px;
+    border:5px solid rgb(247, 247, 247);
+}
+
+.datos2{
+    width: 200px;
+    height: 200px;
+  
+}
+
+.datos2 .p1{
+    position : absolute;
+    top : 90%; left : -53%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    height: 50px;
+    width: 200px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.datos2 .p2{
+    position : absolute;
+    top : 120%; left : -54%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12.5px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    height: 50px;
+    width: 200px;
+    color: rgb(78, 76, 76);
+}
+
+.datos3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+    justify-content: center;
+    height: 109px;
+    width: 300px;
+    position : relative;
+    top : 98%; left : -53%;
+    border-top: 1px solid rgb(182, 182, 182);
+   
+    
+}
+
+.datos3 p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.datos4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+    justify-content: center;
+    height: 10px;
+    width: 300px;
+    position : relative;
+    top : 56%; left : -53%;
+}
+
+.datos4 p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    color: rgb(78, 76, 76);
+}
+
+@media screen and (min-device-width : 375px) and (max-device-width : 375px) and (orientation : landscape){
+    #bodi{
+        grid-column: 1/-1;
+        
+    }
+
+    #grid{
+        
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+
+    #centrar{
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+}
